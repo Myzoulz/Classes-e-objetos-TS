@@ -1,0 +1,17 @@
+[
+    {
+        "name": { "common": "Brazil", "official": "Federative Republic of Brazil" },
+        "independent": true,
+        "unMember": true,
+        "capital": "Brasília",
+        "region": "Americas",
+        "subregion": "South America",
+        "languages": ["Portuguese"],
+        "latlng": [-10, -55],
+        "borders": ["ARG", "BOL", "COL"],
+        "area": 8515767,
+        "population": 212559409,
+        "timezones": ["UTC-03:00"],
+        "flags": { "png": "https://flagcdn.com/w320/br.png", "svg": "https://flagcdn.com/br.svg" }
+    }
+]
