@@ -1,3 +1,5 @@
+import { FilmesType } from './types';
+
 export class Filmes {
   constructor(
     public adult: boolean,
@@ -15,7 +17,7 @@ export class Filmes {
     public vote_count: number
   ) {}
 
-  static fromJSON(json: any): Filmes {
+  static fromJSON(json: FilmesType): Filmes {
     return new Filmes(
       json.adult,
       json.backdrop_path,

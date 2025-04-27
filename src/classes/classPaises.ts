@@ -1,3 +1,5 @@
+import { PaisType } from './types';
+
 export class Paises {
   constructor(
     public name: {
@@ -21,7 +23,7 @@ export class Paises {
     }
   ) {}
 
-  static fromJSON(json: any): Paises {
+  static fromJSON(json: PaisType): Paises {
     return new Paises(
       json.name,
       json.independent,

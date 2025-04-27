@@ -1,7 +1,4 @@
-type PokemonStat = {
-  base_stat: number;
-  stat: string;
-};
+import { PokeType, PokemonStat } from './types';
 
 export class Poke {
   constructor(
@@ -16,7 +13,7 @@ export class Poke {
     public stats: PokemonStat[],
   ) {}
 
-  static fromJSON(json: any): Poke {
+  static fromJSON(json: PokeType): Poke {
     return new Poke(
       json.id,
       json.name,
