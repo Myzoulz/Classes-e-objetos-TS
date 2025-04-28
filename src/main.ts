@@ -9,16 +9,18 @@ import paisesData from './data/paises.json';
 
 
 const pokes = pokesData.map((pokeData: PokeType) => Poke.fromJSON(pokeData));
-pokes.forEach((poke) => {
-  console.log('Poke:', poke);
-});
 
 const filmes = filmesData.map((filmeData: FilmesType) => Filmes.fromJSON(filmeData));
-filmes.forEach((filme) => {
-  console.log('Filme:', filme);
-});
 
 const paises = paisesData.map((paisData: PaisType) => Paises.fromJSON(paisData));
-paises.forEach((pais) => {
-  console.log('País:', pais);
-});
+
+
+
+console.log('<-- Pokemons -->');
+pokes.forEach((poke) => console.log(poke));
+
+console.log('<-- Filmes -->');
+filmes.forEach((filme) => console.log(filme));
+
+console.log('<-- Países -->');
+paises.forEach((pais) => console.log(pais));

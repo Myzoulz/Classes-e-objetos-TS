@@ -10,14 +10,11 @@ const pokes_json_1 = __importDefault(require("./data/pokes.json"));
 const filmes_json_1 = __importDefault(require("./data/filmes.json"));
 const paises_json_1 = __importDefault(require("./data/paises.json"));
 const pokes = pokes_json_1.default.map((pokeData) => classPokes_1.Poke.fromJSON(pokeData));
-pokes.forEach((poke) => {
-    console.log('Poke:', poke);
-});
 const filmes = filmes_json_1.default.map((filmeData) => classFilmes_1.Filmes.fromJSON(filmeData));
-filmes.forEach((filme) => {
-    console.log('Filme:', filme);
-});
 const paises = paises_json_1.default.map((paisData) => classPaises_1.Paises.fromJSON(paisData));
-paises.forEach((pais) => {
-    console.log('País:', pais);
-});
+console.log('<-- Pokemons -->');
+pokes.forEach((poke) => console.log(poke));
+console.log('<-- Filmes -->');
+filmes.forEach((filme) => console.log(filme));
+console.log('<-- Países -->');
+paises.forEach((pais) => console.log(pais));
